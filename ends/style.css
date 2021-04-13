@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Yellowtail', cursive; */
+/* font-family: 'Montserrat', sans-serif;  */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F2831;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 95%;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    color: #1F2831;
+    /* position: fixed; */
+    background-image: url(https://images.unsplash.com/photo-1585743876384-8c5c37bfd498?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2075&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    font-family: 'Yellowtail', cursive; 
+    font-size: 7.5rem;
+    color: #ff77aa;
+    padding-left: 150px;
+}
+
+.logo a {
+    color: #ff77aa;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #fcb1cd;
+    transition: 0.5s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    font-family: 'Yellowtail', cursive;
+    text-decoration: none;
+    color: #ff77aa;
+    font-size: 2.75rem;
+    padding: 20px 80px;
+    margin-top: 50px;
+}
+
+.menu a:hover {
+    color: #fcb1cd;
+    transition: 0.3s;
+    transform: scale(1.5);
+}
+
+main a {
+    text-decoration: none;
+    color: #bae1ff;
+    font-size: 2rem;
+}
+
+main a:hover {
+    color: #5e76b9;
+    transition: 0.5s;
+}
+
+a.user {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #5e76b9;
+}
+
+a.user:hover {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.blog-post {
+    width: 1000px;
+    height: 300px;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: #ddd solid 1px;
+    box-shadow: 2px #ddd;
+    line-height: 1.75rem;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 100px;
+    line-height: 1.75rem;
+}
+
+.blog h1 {
+    font-size: 3rem;
+    color: #bae1ff;
+}
+
+.rating {
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: #ff77aa;
+}
+
+.rating h5 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #bae1ff;
+}
+
+.rating i {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    color: #ff77aa;
+}
+
+.rating i:hover {
+    color: #fcb1cd;
+    transition: 0.6s;
+    transform: scale(1.2);
+}
+
+footer {
+    height: 180px;
+    width: 100%;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+footer i {
+    font-size: 5rem;
+    padding: 20px 80px;
+    color: #5e76b9;
+}
+
+footer i:hover {
+    transition: 0.6s;
+    transform: scale(1.2);
+}
+
+footer .copyright {
+    margin-bottom: 70px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Mobile Phone sizes */
+@media (max-width: 600px) {
+    body {
+        max-width: 600px;
+        min-width: 375px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.logo {
+    font-size: 4rem;
+    padding-left: 0px;
+}
+
+.menu a {
+    font-size: 1.7rem;
+    padding: 2px 25px;
+    margin-top: 50px;
+}
+
+.blog-post {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+
+.blog-post h3 {
+    font-size: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.blog-post .user {
+    margin-top: 0;
+}
+
+footer i {
+    font-size: 2.3rem;
+    padding: 10px 20px;
+    color: #bae1ff;
+}
+
+footer {
+    height: 50px;
+    padding-top: 40px;
+}
+
+}
+
+/* IPad sizes */
+@media (max-width: 1024px) {
+
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Yellowtail', cursive; */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-image: url(https://images.unsplash.com/photo-1506795593475-bac1181c01a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #ff77aa;
+    font-family: 'Yellowtail', cursive; 
+}
+
+a:hover {
+    color: #ffdfdf;
+    transition: 0.5s;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 a {
+    font-size: 10rem;
+}
+
+#section2 a {
+    font-size: 5rem;
+    margin: 0 150px;
+}
+
+#section2 a:hover {
+    transform: scale(1.2);
+}
+
